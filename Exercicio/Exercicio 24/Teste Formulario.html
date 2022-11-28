@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Teste de formulario</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='cadastro.py'></script>
+    <style>
+        html, body{
+            background-color: rgba(36, 167, 130, 0.644);
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+        label{
+            background-color: rgba(0, 255, 255, 0.673);
+            padding: 10px;
+            align-self: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form action="cadastro.py" method="get" autocomplete="off"> 4 
+        <p>
+            <label for="inome">Nome</label>
+            <br>
+            <input type="text" name="nome" id="inome" required maxlength="30"
+            placeholder="Nome Completo">
+        </p>
+        <p>
+            <label for="imedia">Media</label>
+            <br>
+            <input type="number" name="media" id="imedia" min="0" max="10"
+            placeholder="0 a 10" step="0.1" required>
+        </p>
+        <p>
+            <label for="imes">Periodo Letivo</label>
+            <br>
+            <input type="month" name="mes" id="imes">
+        </p>
+        <p>
+            <label for="ihora">Horario da Prova</label>
+            <br>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

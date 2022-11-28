@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #120D31, #381232);
+}
+
+header{
+    
+}
+nav.acesso{
+    margin: auto;
+}
+
+nav{
+    padding: 10px;
+}
+header > nav >a{
+
+    color: white;
+    margin-left: 29px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+header > nav >a:hover{
+    background-color: rgb(204, 192, 255);
+    color: blueviolet;
+}

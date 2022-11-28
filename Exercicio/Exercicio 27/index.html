@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo/main.css'>
+    <link rel="stylesheet" href="estilo/querys.css">
+    <script src='main.js'></script>
+</head>
+<body>
+    <main>
+        <section id="login"> 
+            <div id="imagem">
+
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Faça login para acessar sua conta e poder fazer as 
+                    configurações no seu ambiente ambiente</p>
+                <form action="login.py" method="post" autocomplete="on">
+                    <div class='campo'>
+                        <i class="material-icons">person</i>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu Email"
+                        autocomplete="email" required maxlength="30">
+                        <label for="ilogin"></label>
+                    </div>
+                    <div class="campo">
+                        <i class="material-icons">vpn_key</i>
+                        <input type="password" name="senha" id="isenha" placeholder="Digite a senha"
+                        autocomplete="current-password" required minlenght="8" maxlength="20">
+                        <label for="isenha"></label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a class='botao' href="esqueci.html">Esqueceu a Senha?
+                        
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
